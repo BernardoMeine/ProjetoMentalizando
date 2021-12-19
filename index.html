@@ -7,60 +7,72 @@
     <title>Homepage</title>
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+
 </head>
 <body>
-  <nav>
-    <header class="nav-header">
-      <a href="index.html"> Homepage </a>
-      <a href="sponsors.html"> Patrocinadores </a>
-      <a href="sign-up.html"> Inscreva-se </a>
-  </header>
-   </nav>
-    
-        <main class="main">
-            <div class="wrapper">
-                <div class="box boxTop">
-                  <h1> Plataforma Mentalizando</h1>
-                  <p> Aprenda de forma gratuita com alunos e professores de todo o país</p>
-                </div>
-                <div class="box boxBottom">
-                  <p>
-                   Vem com a gente transformar o conhecimento em algo acessível para todos
-                  </p>
-                </div>
-              </div>
-              <div class="wrapper2">
-                <div class="box boxRight">
-                  <p>
-                    Teste seus conhecimentos com exercícios <br/>criados por pessoas de qualquer lugar
-                  </p>
-                </div>
-                <div class="box boxLeft">
-                  <p>
-                    Conheça as disciplinas disponíveis 
-                    <input 
-                     type="text" 
-                     list="classesdata" 
-                     placeholder="Escolha uma disciplina"/>
 
-                     <datalist id="classesdata">
-                         <option>Matemática</option>
-                         <option>Física</option>
-                         <option>Biologia</option>
-                         <option>Química</option>
-                         <option>Português</option>
-                         <option>História</option>
-                         <option>Geografia</option>
-                     </datalist>
-                  </p>
-                </div>
-              </div>
-              <img src="./files/Ead-image.jpg" alt="Imagem aluno estudando">
+  <header class="header">
+    <img class="header__logo" alt="" src="./assets/logo.jpg"/>
+    <div class="header-right">
+      <a class="active" href="index.html">Homepage</a>
+      <a href="sponsors.html">Patrocinadores</a>
+      <a href="sign-up.html">Inscreva-se</a>
+      <a href="subjects.html">Disciplinas</a>
+    </div>
+  </header>
+
+  <section id="overview" class="banner">
+   
+    <div class="banner__text">
+      <h1 class="banner__titlePrimary">Plataforma <br> Mentalizando</h1>
+      <p class="banner__textParagraph">
+        Somos uma plataforma que busca garantir educação de nível médio para jovens e adultos do país  inteiro de forma gratuita.
+      </p>
+    </div>
+      
+  </section>
+
+  <section class="description">
+    <h2 class="descriptionTitle"> Sobre nós </h2>
+    <p class="descriptionText">
+      - Disponibilização de vídeo-aulas ministradas por professores parceiros <br>
+      - Materiais de estudos das diferentes disciplinas ensinadas no ensino médio <br> 
+      - Financiamento de  projetos de alunos através de empresas colaboradoras
+    </p>
+  </section>
+
+  <section class="disciplineExc">
+    <div class="discipline1">
+      <p class="discipline1__text"> Conheça as disciplinas disponíveis 
+        <input 
+         class="form__disciplines"
+         type="text" 
+         list="classesdata" 
+         placeholder="Escolha uma disciplina"/>
+
+         <datalist id="classesdata">
+             <option>Matemática</option>
+             <option>Física</option>
+             <option>Biologia</option>
+             <option>Química</option>
+             <option>Português</option>
+             <option>História</option>
+             <option>Geografia</option>
+         </datalist> </p>
+    </div>
+    <div class="exercise">
+      <p class="exercise__text"> Teste seus conhecimentos com exercícios criados por pessoas de qualquer lugar </p>
+    </div>
+  </section>
+
+        <main class="main">
+            
         </main>
     
     
         <footer class="footer">
-            
+            <h3> Fala rapeize, me da uma bolsa por favor</h3>
         </footer>
     
 </body>

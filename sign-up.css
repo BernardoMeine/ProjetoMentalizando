@@ -1,32 +1,146 @@
 body {
-    margin: 0;
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "main main"
-      "footer footer";
-    grid-template-rows: 50px 1fr 40px;
-    grid-template-columns: 1fr 100px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: white;
+  border: 0px solid #000000;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  background: url(./assets/logo.jpg) no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.header a {
+  float: left;
+  color: rgb(192, 16, 16);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px; 
+  line-height: 30px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
   }
-  header {
-    grid-area: header;
-    background-color: rgb(12, 120, 163);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 32px;
-    font-style: normal;
-    font-size: 30px;
-    font-weight: normal;
+  
+  .header-right {
+    float: none;
   }
 
-  main {
-    grid-area: main;
-    background-color: rgb(255, 255, 255);
+  .form-aluno {
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+
+  .input__aluno {
+    font-size: 10px;
+  }
+
+  .input__prof {
+    font-size:10px;
+  }
+
+  .form-prof {
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+
+  .main {
+    background-size: 150% !important;
+  }
+
+  .sign__text {
+    font-size: 15px !important;
+  }
+}
+
+  .formularies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color:cornflowerblue;
+    background: linear-gradient(rgba(255,255,255,0), rgba(22, 146, 218, 0.555));
+    border: 0px solid #000000;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+  }
+
+  .form-aluno {
+   font-size: 20px;
+   font-weight: bold;
+   color:midnightblue;
+   margin-top: 20px;
+   margin-bottom: 30px;
+   padding: 10px 0;
+   border: 0px solid #000000;
+   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+  }
+
+  .form-prof {
+    font-size: 20px;
+    font-weight: bold;
+    color:midnightblue;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border: 0px solid #000000;
+   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background: url("./files/ead-2-image.jpg") no-repeat right ;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    border: 0px solid #000000;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
   } 
+
+  .sign__text {
+    font-size:40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color:darkred;
+    margin-top:40px;
+    margin-bottom: 30px;
+  }
   
-  footer {
-    grid-area: footer;
-    background-color: violet;
+  .footer {
+    background-color:crimson;
+    padding: auto;
+    height: 150px;
+    width: 100%;
   }

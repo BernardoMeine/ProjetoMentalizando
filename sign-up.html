@@ -4,67 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós</title>
+    <title>Inscrição</title>
 
     <link rel="stylesheet" href="sign-up.css">
-</head>
-<body>
-  <nav>
-    <header class="nav-header">
-      <a href="index.html"> Homepage </a>
-      <a href="sponsors.html"> Patrocinadores</a>
-      <a href="sign-up.html"> Inscreva-se </a>
-  </header>
-   </nav>
-    <main class="main">
-      <form action="">
-        <fieldset>
-            <legend>cadastro (alunos) </legend>
-            
-            <label for="nome">Nome</label>
-            <br>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui" required >
-            <br>
-            <br>
-            <label for="email">Email</label>
-            <br>
-            <input type="email" name="email" id="email" placeholder="Digite seu email aqui" required>
-            <br>
-            <br>
-            <label for="password">senha</label>
-            <br>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha" required></input>
-            <br>
-            <button type="submit" name="botão"> Enviar </button>
-        </fieldset>
-    </form>
-    <form action="">
+    <link rel="stylesheet" href="reset.css">
+
+    <header class="header">
+      <img class="header__logo" alt="" src="./assets/logo.jpg" />
+      <div class="header-right">
+        <a class="active" href="index.html">Homepage</a>
+        <a href="sponsors.html">Patrocinadores</a>
+        <a href="sign-up.html">Inscreva-se</a>
+        <a href="subjects.html">Disciplinas</a>
+      </div>
+    </header>
+  
+  <section class="formularies">
+    <form class= "form-aluno" action="">
       <fieldset>
-          <legend>Cadastro (professores) </legend>
-          
+          <legend>Cadastro (alunos) </legend>
+          <br>
           <label for="nome">Nome</label>
           <br>
-          <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui" required >
+          <input type="text" class="input__aluno" name="nome" id="nome" placeholder="Digite seu nome aqui" required >
           <br>
           <br>
           <label for="email">Email</label>
           <br>
-          <input type="email" name="email" id="email" placeholder="Digite seu email aqui" required>
+          <input type="email" class="input__aluno" name="email" id="email" placeholder="Digite seu email aqui" required>
           <br>
           <br>
-          <label for="mensagem">senha</label>
+          <label for="password">senha</label>
           <br>
-          <input type="password" name="password" id="password" placeholder="Digite sua senha" required></input>
+          <input type="password" class="input__aluno" name="password" id="password" placeholder="Digite sua senha" required></input>
           <br>
           <button type="submit" name="botão"> Enviar </button>
       </fieldset>
   </form>
-  <img src="./files/ead-2-image.jpg" alt="Imagem garota estudando">
+  <form class= "form-prof" action="">
+    <fieldset>
+        <legend>Cadastro (professores) </legend>
+        <br>
+        <label for="nome">Nome</label>
+        <br>
+        <input type="text" class="input__prof" name="nome" id="nome" placeholder="Digite seu nome aqui" required >
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" class="input__prof" name="email" id="email" placeholder="Digite seu email aqui" required>
+        <br>
+        <br>
+        <label for="mensagem">senha</label>
+        <br>
+        <input type="password" class="input__prof" name="password" id="password" placeholder="Digite sua senha" required></input>
+        <br>
+        <button type="submit" name="botão"> Enviar </button>
+    </fieldset>
+</form>
+  </section>
+
+    <main class="main">
+      <h1 class="sign__text"> Venha fazer parte dessa comunidade <br> que está mudando a educação no Brasil! </h1>
     </main>
 
 
     <footer class="footer">
-        
-    </footer>
+      <h3> Fala rapeize, me da uma bolsa por favor</h3>
+  </footer>
 </body>
 </html>
