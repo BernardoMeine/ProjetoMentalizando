@@ -107,8 +107,9 @@ body {
   width: 100%;
   font-size: 7rem;
   font-weight: bold;
-  margin-top:20px;
-  color:darkred;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  margin-top:65px;
+  color:rgb(72, 11, 87);
 
 }
 
@@ -122,22 +123,15 @@ body {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
 }
 
-.descriptionTitle {
-  font-size:50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  color:darkred;
-  margin-top:30px;
-  text-align: center;
-}
-
 .description__textParagraph {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: bold;
-  margin-top:110px;
+  margin-top:50px;
   margin-bottom:30px;
+  margin-right: 20px;
+  margin-left: 20px;
   text-align: center;
-  color:black;
+  color:rgb(167, 19, 80);
 }
 
 .description__sponsors {
@@ -155,8 +149,11 @@ body {
   }
 
   .footer {
-    background-color:crimson;
+    background-color:dodgerblue;
     padding: auto;
+    line-height: 50px;
     height: 150px;
     width: 100%;
+    border-top: 1px solid #000000;
+    filter: drop-shadow(4px 4px 4px 4px rgba(0, 0, 0, 0.4));
   }

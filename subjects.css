@@ -76,8 +76,9 @@ line-height: 30px;
 
 .slider .item__text {
   background-color: white;
-  color: red;
+  color: rgb(192, 16, 16);
   font-size: 50px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   position: absolute;
   top:0 ;
   width: 100%;
@@ -122,9 +123,10 @@ line-height: 30px;
 }
 
   .footer {
-    background-color:crimson;
-    padding: auto;
+    background-color:dodgerblue;
+    line-height: 50px;
     height: 150px;
     width: 100%;
-    margin-top:20px;
+    border-top: 1px solid #000000;
+    filter: drop-shadow(4px 4px 4px  rgba(0, 0, 0, 0.4));
   }

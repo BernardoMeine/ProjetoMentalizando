@@ -68,7 +68,7 @@ body {
     .banner__titlePrimary {
       display: flex;
       text-align: left;
-      font-size: 60px !important;
+      font-size: 50px !important;
     }
 
     .banner__textParagraph {
@@ -128,7 +128,8 @@ body {
 .banner__titlePrimary {
     width: 100%;
     font-size: 6rem;
-    color: black;
+    font-weight: bold;
+    color: rgb(24, 4, 70);
 }
 
 .banner__textParagraph {
@@ -178,7 +179,6 @@ body {
   width: 40%;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 10px;
   border: 0px solid #000000;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
 }
@@ -205,19 +205,29 @@ body {
   padding-left: 5%;
 }
 
+.button__subjects {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color:midnightblue;
+  background-color:lightblue;
+  padding-left: 5%;
+  padding: 10px 0;
+  border: 3px solid midnightblue;
+}
+
 .exercise {
   background-color:darkred;
   width: 40%;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 10px;
 }
 
 .exercise__text {
-  font-size: 35px;
+  font-size: 38px;
   font-weight: bold;
   color:white;
-  margin-top: 20px;
+  margin-top: 70px;
   margin-bottom: 30px;
   padding: 10px 0;
   line-height: 40px;
@@ -226,9 +236,17 @@ body {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
 }
   
-  .footer {
-    background-color:crimson;
-    padding: auto;
-    height: 150px;
-    width: 100%;
-  }
+.footer {
+  background-color:dodgerblue;
+  padding: auto;
+  line-height: 50px;
+  height: 150px;
+  width: 100%;
+  border-top: 1px solid #000000;
+  filter: drop-shadow(4px 4px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+footer__note {
+  font-size:50px !important;
+  text-align: center;
+}
